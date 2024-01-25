@@ -36,6 +36,7 @@
     */
     /*background: color image repeat position*/
     background: var(--bg-url) no-repeat top center/cover; 
+    height: 100vh; /*usado pra adaptar a altura maxima do background pro mais fino possivel*/
     }
     body * {
     
@@ -182,3 +183,13 @@ left: 0;
     transition: all 0.2s;
     border: 2px solid rgba(255, 255, 255, 0.05);
     }
+
+/* media queries*/ /*ajustes de paginas para adaptação de mob para desktop*/
+@media (min-width: 700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }  
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
